@@ -16,18 +16,47 @@ Descrizione parametri:
 
 ![](./imgs/img_02.png)
 
-1. [**richiesto**] layer poligonale su cui scegliere la/e particelle da frazionare
-2. [**richiesto**]  layer linea su cui disegnare la linea di taglio desiderata
-3. [**richiesto** alternativo a 4] Denominatore della frazione di superficie da ottenere (ad esempio 1/3) o in alternativa il numero di parti eguali in cui dividere la particella/poligono
-4. [**richiesto** alternativo a 3] In alternativa al numero di parti è possibile specificare l’area che si vuole ottenere come area di risultato. 
-L’inserimento di una superficie target fa ignorare il parametro del punto 3
-5. [**opzionale**] Di default l’algoritmo produce un layer temporaneo che ha per nome ‘Fraz_’ seguito da data e ora, che dovrete salvare una volta raggiunto il risultato voluto
-6. [**opzionale**] Potrebbe essere necessario tagliare la particella con una linea vincolata (ad esempio una strada in progetto con la sua larghezza) in tal caso spuntando la casella verrà eseguito un taglio direttamente con la dividente indicata
-7. [**opzionale**] Spuntare se si vogliono n parti della medesima superficie (ovviamente per n maggiore di 2) 
-8. [**opzionale**] Poiché la ricerca della posizione della dividente secondo i parametri impostati dipende da come è posizionato il centroide della geometria poligonale, potrebbe ottenersi, nel caso di divisione per frazione (ad esempio 1/3) o nel caso di superficie assegnata, la parte risultante nella posizione non desiderata, spuntando è possibile invertire la posizione rispetto alla dividente.
+1. [**richiesto**] layer LinestringZ o Linestring25D su cui giace la traccia
+2. [**opzione**] scala di disegno normalmente 1:1 (si scala in stampa) [disponibili 1:1, 1:10, 1:2, 1:20]
+3. [**opzione**] Picchetto o sezione di partenza del profilo
+4. [**opzione**] Picchetto o sezione di arrivo del profilo
+   NOTA: i valori si desumono del profilo una volta eseguito, il primo valore deve essere minore del seconto, eventuale svista di inserimento viene corretta automaticamente dal programma scambiando i valori  
+5. [**opzionale**] In caso di subprofilo è possibile ridurre automaticamente la    nuova quota di riferimento
+6. [**opzionale**] Layer puntuale di risultato per le etichette
+7. [**opzionale**] Layer line di risultato delle candele e delle fincature
+8. [**opzionale**] Layer line di risultato della traccia del profilo
+   
+## Modalità operative
+Una volta caricato il layer della tracce selezionandone una è possibile ottenerne il profilo, se ve ne son presenti più di una verranno disegnate anche le altre.
+Per scelta il profilo viene disegnato sul canvas a partire dall'origine (0,0), soltanto i subprofili (parti di profilo da sezione xx a sezione yy) vengono disegnati nella posizione a cui corrisponde la progressiva.
 
-## Layer necessari
-Un layer contenente una o più tracce di cui fare il profilo
+![](./imgs/img_03.png)
 
-## Esecuzione
-Dopo aver caricato nei 
+## AVVERTENZE
+Solo linestring 3D vengono riconosciute dall'algoritmo
+
+## Esempio
+
+Frazionamento incrociato in parti eguali
+
+[![](./imgs/esempio1.PNG)](https://youtu.be/sPACEtsRn6M "Primo Esempio")
+
+Frazionamento in parti complementari o direttamente da dividente
+
+[![](./imgs/esempio2.PNG)](https://youtu.be/XRjeuAj3QAA "Secondo esempio")
+
+
+Frazionamento a superficie vincolata
+
+[![](./imgs/esempio3.PNG)](https://youtu.be/RHOEGsowpWU "Terzo esempio")
+
+https://github.com/Korto19/Profili/blob/master/Profili.py
+
+## APPENDICE
+Per poter estrarre tracce 3d da piani a curve di livello si è realizzato, con il modellatore grafico, un processo che date le curve di livello e la linea di traccia produce in un solo passaggio la traccia del profilo in 3D
+
+![](./imgs/img_04.png)
+
+per funzionare occorre che il layer si chiami obbligatoriamente **Traccia**, da questo produrrà un nuovo layer **Traccia_profilo** da passare all'algoritmo Profili.
+
+https://github.com/Korto19/Profili/blob/master/Profili.py
