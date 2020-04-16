@@ -32,7 +32,7 @@ Per scelta il profilo viene disegnato sul canvas a partire dall'origine (0,0), s
 
 ![](./imgs/img_03.png)
 
-Per ottenere il profilo cone visualizzato occorre tematizzare opportunamente il layer delle label con il file **Etichette.qml** 
+Per ottenere il profilo cone visualizzato occorre tematizzare opportunamente il layer delle label con il file **Etichette.qml**, il layer della fincatura con **Fincatura.qml** ed il layer del terreno con **Profilo.qml**
 
 ## AVVERTENZE
 Solo linestring 3D vengono riconosciute dall'algoritmo
