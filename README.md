@@ -41,8 +41,9 @@ Solo linestring 3D vengono riconosciute dall'algoritmo
 
 Profilo di esempio
 
-[![](./imgs/esempio1.PNG)](https://youtu.be/sPACEtsRn6M "Primo Esempio")
+![](./imgs/img_05.png)
 
+[![](./imgs/esempio1.PNG)](https://youtu.be/sPACEtsRn6M "Primo Esempio")
 
 https://github.com/Korto19/Profili/blob/master/Profili.py
 
