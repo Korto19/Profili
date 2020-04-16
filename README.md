@@ -53,4 +53,4 @@ Per poter estrarre tracce 3d da piani a curve di livello si è realizzato, con i
 
 per funzionare occorre che il layer si chiami obbligatoriamente **Traccia**, da questo produrrà un nuovo layer **Traccia_profilo** da passare all'algoritmo Profili.
 
-https://github.com/Korto19/Profili/blob/master/Profili.py
+https://github.com/Korto19/Profili/blob/master/Traccia_profilo.model3
