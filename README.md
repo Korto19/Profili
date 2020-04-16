@@ -37,18 +37,10 @@ Solo linestring 3D vengono riconosciute dall'algoritmo
 
 ## Esempio
 
-Frazionamento incrociato in parti eguali
+Profilo di esempio
 
 [![](./imgs/esempio1.PNG)](https://youtu.be/sPACEtsRn6M "Primo Esempio")
 
-Frazionamento in parti complementari o direttamente da dividente
-
-[![](./imgs/esempio2.PNG)](https://youtu.be/XRjeuAj3QAA "Secondo esempio")
-
-
-Frazionamento a superficie vincolata
-
-[![](./imgs/esempio3.PNG)](https://youtu.be/RHOEGsowpWU "Terzo esempio")
 
 https://github.com/Korto19/Profili/blob/master/Profili.py
 
