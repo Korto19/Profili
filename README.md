@@ -52,6 +52,6 @@ Per poter estrarre tracce 3d da piani a curve di livello si è realizzato, con i
 
 ![](./imgs/img_04.png)
 
-per funzionare occorre che il layer si chiami obbligatoriamente **Traccia**, da questo produrrà un nuovo layer **Traccia_profilo** da passare all'algoritmo **Profili**.
+per funzionare occorre che il layer si chiami obbligatoriamente **Traccia**, da questo produrrà un nuovo layer **Traccia_profilo** da passare all'algoritmo **Profili** ed il layer **Vertici** utile a tematizzare convenientemente la traccia.
 
 https://github.com/Korto19/Profili/blob/master/Traccia_profilo.model3
