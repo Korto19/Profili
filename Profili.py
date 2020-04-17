@@ -227,6 +227,8 @@ class ProfileBeta_ProcessingAlgorithm(QgsProcessingAlgorithm):
         
         fields = sourceL.fields()
         fields.append(QgsField('Etichette', QVariant.String))
+        
+        fields_e = sourceL.fields()
 
 
         earth_fields = QgsFields()
@@ -235,7 +237,7 @@ class ProfileBeta_ProcessingAlgorithm(QgsProcessingAlgorithm):
         (sink, dest_id) = self.parameterAsSink(
             parameters,
             self.OUTPUT,
-            context, fields, QgsWkbTypes.LineString, sourceL.sourceCrs()
+            context, fields_e, QgsWkbTypes.LineString, sourceL.sourceCrs()
         )
 
         (earth, dest_id) = self.parameterAsSink(
@@ -271,7 +273,7 @@ class ProfileBeta_ProcessingAlgorithm(QgsProcessingAlgorithm):
                 line = feature.geometry().constGet()
                 n = len(vertices) - 1
                 
-                if al_sez == 0:
+                if al_sez == 0 or al_sez > n:
                     al_sez = n
                     
                 if rid_rif:

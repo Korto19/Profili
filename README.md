@@ -32,7 +32,7 @@ Per scelta il profilo viene disegnato sul canvas a partire dall'origine (0,0), s
 
 ![](./imgs/img_03.png)
 
-Per ottenere il profilo cone visualizzato occorre tematizzare opportunamente il layer delle label con il file **Etichette.qml**, il layer della fincatura con **Fincatura.qml** ed il layer del terreno con **Profilo.qml**
+Per ottenere il profilo come visualizzato occorre tematizzare opportunamente il layer delle label con il file **Etichette.qml**, il layer della fincatura con **Fincatura.qml** ed il layer del terreno con **Profilo.qml**, questi tematismi possono essere automaticamente applicati se specificati in fase di rendering del processing [_purtroppo quello delle etichette non viene applicato per via di un bug_]
 
 ## AVVERTENZE
 Solo linestring 3D vengono riconosciute dall'algoritmo
@@ -48,7 +48,7 @@ Profilo di esempio
 https://github.com/Korto19/Profili/blob/master/Profili.py
 
 ## APPENDICE
-Per poter estrarre tracce 3d da piani a curve di livello si è realizzato, con il modellatore grafico, un processo che date le curve di livello e la linea di traccia produce in un solo passaggio la traccia del profilo in 3D
+Per poter estrarre tracce 3d da piani a curve di livello si è realizzato, con il modellatore grafico, un processo che date le curve di livello e la linea di traccia produce in un solo passaggio la traccia del profilo in 3D evidenziandone i vertici con il ripettivo numero progressivo (applica in fase di rendering i due tematismi Traccia_profilo.qml e Vertici.qml)
 
 ![](./imgs/img_04.png)
 
