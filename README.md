@@ -37,13 +37,13 @@ Per ottenere il profilo come visualizzato occorre tematizzare opportunamente il 
 ## AVVERTENZE
 Solo linestring 3D vengono riconosciute dall'algoritmo
 
-## Esempio
+## Clip dimostrativa
 
 [![](./imgs/img_06.png)](https://youtu.be/0izfW0zont4 "Primo Esempio")
 
 https://youtu.be/0izfW0zont4
 
-Profilo finale
+## Esempio di Profilo
 
 ![](./imgs/img_05.png)
 
