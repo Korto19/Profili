@@ -41,6 +41,8 @@ Solo linestring 3D vengono riconosciute dall'algoritmo
 
 [![](./imgs/img_06.png)](https://youtu.be/0izfW0zont4 "Primo Esempio")
 
+https://youtu.be/0izfW0zont4
+
 Profilo finale
 
 ![](./imgs/img_05.png)
