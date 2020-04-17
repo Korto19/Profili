@@ -39,7 +39,7 @@ Solo linestring 3D vengono riconosciute dall'algoritmo
 
 ## Esempio
 
-[![](./imgs/img_06.png)](https://youtu.be/sPACEtsRn6M "Primo Esempio")
+[![](./imgs/img_06.png)](https://youtu.be/0izfW0zont4 "Primo Esempio")
 
 Profilo finale
 
