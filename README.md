@@ -50,7 +50,7 @@ https://youtu.be/0izfW0zont4
 https://github.com/Korto19/Profili/blob/master/Profili.py
 
 ## APPENDICE
-Per poter estrarre tracce 3d da piani a curve di livello si è realizzato, con il modellatore grafico, un processo che date le curve di livello e la linea di traccia produce in un solo passaggio la traccia del profilo in 3D evidenziandone i vertici con il ripettivo numero progressivo (applica in fase di rendering i due tematismi **Traccia_profilo.qml** e **Vertici.qml**)
+Per poter estrarre tracce 3d da piani a curve di livello si è realizzato, con il modellatore grafico, un processo che date le curve di livello, il campo in cui è memorizzata la quota/elevazione delle curve e linea di traccia produce in un solo passaggio la traccia del profilo in 3D evidenziandone i vertici con il ripettivo numero progressivo (applica in fase di rendering i due tematismi **Traccia_profilo.qml** e **Vertici.qml**)
 
 ![](./imgs/img_04.png)
 
