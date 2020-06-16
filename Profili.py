@@ -47,7 +47,7 @@ import math
 import sys
 
 
-class ProfileBeta_ProcessingAlgorithm(QgsProcessingAlgorithm):
+class Profile_ProcessingAlgorithm(QgsProcessingAlgorithm):
     """
     Algorithm that fractions a poligon in n parts.
     """
@@ -68,7 +68,7 @@ class ProfileBeta_ProcessingAlgorithm(QgsProcessingAlgorithm):
         return QCoreApplication.translate('Processing', string)
 
     def createInstance(self):
-        return ProfileBeta_ProcessingAlgorithm()
+        return Profile_ProcessingAlgorithm()
 
     def name(self):
         """
